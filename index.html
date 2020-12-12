@@ -1,72 +1,127 @@
 <!DOCTYPE html>
 <html>
    <head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <<script type="text/javascript" src="script.js"></script>
    	<meta charset="utf-8">
    	<meta name = "author: " content="Lejla Kovač">
    	<meta name= "last modified:" content = "26.10.2019.">
 
+
      <title> Lejla's resume </title>
 </head>
 
-   <body bgcolor="LightSlateGray">
    
+   <body>
+    
+        <address>
+            
+                My first version of cv:
+                <a href="https://klejla.github.io/Resume-/">
+         click here </a>
+            <address>
+              
+                    Repository link: 
+                    <a href="https://github.com/klejla/Resume-?files=1"> click here </a>
+            </address>
+            <address>My second version of cv: 
+            <a href="https://klejla.github.io/resume2-/"> click here </a>
+             </address>
+             <adress>
+                Repository link: 
+                <a href="https://github.com/klejla/resume2-"> click here </a>
+            </adress>
 
  
  <center><img src="lejla.jpg" alt="Lejla Kovač" title="Lejla Kovač" width="200" height="270" /></center>
 
 
 	 
-	<center><h1> Lejla Kovač </h1></center>
-	<center><p>
-	 <font size="5" style="font-family:'Courier New'" color="purple"> Software Engineering Student </font>
+     <div class="card-header" id="myName" onclick="nameClick()"><h2><center>Lejla Kovač</center></h2></div>
+	<p>
+	 <font size="5" style="image-rendering " color="purple"> Software Engineering Student </font>
 
 
-</p></center>
+</p>
 
-<center><p>
+
 	<h2>HELLO!</h2>
+    <p>
 	My name is Lejla Kovač. I am 21 years old and I study Software Engineering at <acronym title = "International University Of Sarajevo">IUS</acronym>. <br> This is my first year of learning HTML and my main goal is to succeed and feel satisfied using it.
 
-</p></center>
+</p>
+
 <hr></hr>
 
-<center><p>
+<p>
+ 
     <h2> Contact information </h2>
-    
+
     <p><strong>Full name: </strong>Lejla Kovač</p>
     <p><strong>Address: </strong> Trg Zavnobiha 3, Sarajevo, 71000</p>
     <p><strong>Email: </strong>fenixx804@gmail.com</p>
     <p><strong>Cell: </strong>(387) 644007352</p>
 
-    <h2>Education</h2>
-   
-        	<p><strong>High school, Gazi Husrev-beg's Madrasa</strong></p>
-        	<p><strong>International University of Sarajevo, Sarajevo, Bosnia and Herzegowina</strong></p>
-        	<p> Bachelor of Software Engineering </p>
+</p>
 
-    <h2>Skills</h2>
-    <p><em>C++</em></p>
-    <p><em>Java</em></p>
-    <p><em>SQL</em></p>
-    <p><em>HTML</em>(beginner)</p>
+<div id="cv">
+    <button type="button" onclick="document.getElementById('cv').style.display='none'">Click here if you don't want to see this!</button>
+<p>
+    <table>
+        
+
+        <tr>
+    <th><font size="5" style="image-rendering:"> Education</th></font>
+    <th><font size="5" style = "image-rendering:"> Skills</th></font>
+    <th><font size="5" style = "image-rendering:">Interests</th></font>
+</tr>
+
+<tr>
+     <td>High School, Gazi Husrev-beg's Madrasa</td>
+     <td> C++ </td>
+     <td>Photography</td>
+</tr>
+   <tr>
+    <td>International University Of Sarajevo, Bosnia and Herzegowina</td>
+    <td> Java </td>
+    <td> Reading, writing </td>
+</tr>
+
+  <tr>
+     <td> Bachelor of Software Engineering </td>
+     <td> SQL </td>
+     <td> Traveling </td>
+ </tr>
+</table>
+</p>
+    </div>
 
 
-     <h2><strong>Objective</strong></h2>
+    <form method = "post" action = "process.php">
+        <fieldset>
+            <legend><strong>You can contact me</legend></strong>
+            <p>
+            <label> Name </label>
+            <input type = "text" name="title"/>
+        </p>
+        <p>
+            <label> Surname </label>
+            <input type = "text" name= "title" />
+        </p>
+
+        <p>
+            <label> Subject </label>
+            <input type ="text" name="title"/>
+        </p>
+        <p>
+            <button type="button" onclick="dispMsg()"> Submit</button>
+        </p>
      
-     <p>Looking for the environment where I can use my knowledge and to succeed in it.</p>
+       <button type="button" onclick="myFunction()">What is my objective?</button>
+    <p id="demo"></p>
+</p>
 
-</p></center>
-  
-
-     <center><p> 
-     	<h2>Interests</h2>
-     	<p><em>Photography</em></p>
-     	<p><em>Reading,writing</em></p>
-     	<p><em>Traveling</em></p>
-     	
-     	</p></center>
-
-
+<script type="text/javascript" src="main.js"></script>
 
 </body>
 </html>

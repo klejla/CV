@@ -1,0 +1,43 @@
+body{
+            background-color: lightgray;
+
+        }
+        
+      .cv{
+    position:relative; 
+    color:white; 
+     }
+
+        td{
+            
+            border: solid 1pt black;
+            padding: 10pt;
+        }
+        
+        p{
+        	position: center;
+        	color: black;
+        	text-align: center;
+        	font-family: Arial;
+        }
+        h2{
+            text-align: center;
+            position: center;
+            text-indent: 5px;
+            color:black;
+        }
+        h1{
+            text-align: center;
+            position: center;
+            text-indent: 7px;
+        }
+        fieldset{
+            position: center;
+
+        }
+        input[type=submit]{
+            background-color: gray;
+        }
+        div.card-header {
+    margin-left: 20px;
+  }
